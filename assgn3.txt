@@ -1,0 +1,80 @@
+Day 3 assignment
+
+Q1.Js for taking inpit from user to check whether the number is even or odd:
+
+Ans:
+
+<html>
+<head>
+<script>
+function oddeven()
+{
+var number;
+number=No(document.getElementById("no_input").value);
+if(number%2==0)
+{
+alert("The number is even");
+}
+else
+{
+alert("The number is odd");
+}
+}
+</script>
+</head>
+<body>
+Enter any number:<input id="no_input"><br />
+<button onclick="oddeven()">Click me</button>
+</body>
+</html>
+
+Q2.Js code to detect OS and version and log them to the console
+Ans:
+
+<html>
+<head>
+	<title>
+	Detecting the operating system and its version!
+	</title>
+</head>
+<div id="example"></div>
+<script type="text/javascript">
+txt = "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
+txt = "<p>Browser Version: " + navigator.appVersion + "</p>";
+console.log("example");
+</script>
+<body>
+</body>
+</head>
+
+
+Q3.Assign marks to students by entering marks as input
+Ans:
+
+<html>
+<head>
+	<title>Grades</title>
+</head>
+<script>
+function Calculation(){
+	var marks = document.getElementById('marks').value;
+	var sub = documents.getElementById('sub').value;
+	var avg = marks / sub;
+	if(marks >= 95 && marks !=0){
+		document.getElementById('grade').value = "A+";
+		document.getElementById('avg').value = "average";
+		document.getElementById('state').value = "pass";
+        }
+	else{
+	alert("wrong info!")
+	}
+};
+</script>
+<body>
+	<label>Please Enter Your marks(1-100)</label>
+	<input type="number" id="marks">
+	<label>Your grade is :</label>;
+	<input type="text" id="grade">
+	<button type="submit" onclick="Calculate()">Calculate</button>
+</body>
+</html>
