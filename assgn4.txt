@@ -1,0 +1,4 @@
+console.log("Higher order functions");
+Let arr =[0,1,2,3,4,5,6];
+Let array = arr.filter(el => el***3==0);
+console.log(array);
